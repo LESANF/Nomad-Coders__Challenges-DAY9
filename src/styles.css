@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap");
 
 body {
-  background-color: black;
   display: flex;
   justify-content: center;
   font-family: "PT Sans Narrow", sans-serif;
@@ -11,6 +10,7 @@ body {
 }
 
 .big__frame {
+  letter-spacing: 1px;
   width: 360px;
   background-color: #f8f7ff;
   display: flex;
@@ -22,7 +22,9 @@ body {
 
 .sign__form {
   width: 300px;
-  background-color: #cec8c8;
+  border-radius: 45px;
+  box-shadow: 30px 20px 60px -21px black, inset 30px 20px 60px -21px white;
+  background-color: #f8f8f8;
 }
 
 .sign__form .sign__header h3 {
@@ -76,13 +78,75 @@ body {
 }
 
 .sign__form .btn__frame {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  margin: 0 15px;
 }
 
 .btn__frame .frame-btn-sign {
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   color: white;
   font-size: 11px;
   background-color: #e2283d;
+  padding: 12px 0;
+}
+
+.btn__frame .or {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn__frame .frame-btn-sns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.frame-btn-sns .sns-facebook {
+  background-color: #475a95;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 12px 0;
+}
+
+.frame-btn-sns .sns-twitter {
+  background-color: #5da1f2;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 12px 0;
+}
+
+.frame-btn-sns .sns-twitter,
+.frame-btn-sns .sns-facebook {
+  width: 45%;
+}
+
+.nav {
+  margin: 30px 15px 80px 15px;
+}
+
+.nav .join__frame {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.nav .find__frame {
+  display: flex;
+}
+.nav .join__frame,
+.nav .find__frame {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.nav__account {
+  color: red;
+  font-weight: 700;
+  margin-left: 4px;
 }
