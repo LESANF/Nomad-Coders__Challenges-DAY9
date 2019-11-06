@@ -80,6 +80,9 @@ body {
 }
 
 .btn__frame .frame-btn-sign {
-  border-radius: 1px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 11px;
   background-color: #e2283d;
 }
